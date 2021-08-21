@@ -10,5 +10,5 @@ spec:
       paths:
       - path: /
         backend:
-          serviceName: aspnetapp
+          serviceName: heroes-node-backend
           servicePort: 80
