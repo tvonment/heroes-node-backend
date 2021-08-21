@@ -44,6 +44,7 @@ jobs:
         manifests: |
           manifests/deployment.yml
           manifests/service.yml
+          manifests/ingress.yml
         images: |
           heroes.azurecr.io/heroescluster:${{ github.sha }}
         imagepullsecrets: |
