@@ -8,6 +8,25 @@ app.use(cors({
 }));
 
 app.get("/heroes", (req,res) => {
+  const heroes = [
+  {
+    id: 1,
+    name: "Iron Man",
+  },
+  {
+    id: 2,
+    name: "Thor",
+  },
+  {
+    id: 3,
+    name: "Hawkeye",
+  },
+ ];
+
+ res.json(heroes);
+});
+
+app.get("/api/heroes", (req,res) => {
     const heroes = [
     {
       id: 1,
