@@ -7,6 +7,15 @@ app.use(cors({
   origin: '*'
 }));
 
+app.get("/", (req,res) => {
+    const hero = {
+      id: 1,
+      name: "Hello World!",
+    }
+  
+   res.json(hero);
+});
+
 app.get("/heroes", (req,res) => {
   const heroes = [
   {
